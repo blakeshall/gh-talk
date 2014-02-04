@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#FFF">
+					<img id="logo" src="img/GitHub_Logo.png">
+					<img id="octocat" height="300" width="350" src="img/Octocat.png">
+				</section>
+
+				<section>
+					<h2>Who am I?</h2>
+					<p>
+						Blake Hall
+					</p>
+					<ul>
+						<li>Student</li>
+						<li>Web Developer</li>
+						<li>Civic Hacker</li>
+					</ul>
+				</section>
+
+				<section id="fragments">
+					<h2>First off: Git</h2>
+					<p>Fast and lightweight distributive version control</p>
+					<p class="fragment">Branching</p>
+					<p class="fragment">Rebasing/Merging</p>
+				</section>
+
+				<section>
+					<h2>Open Source Community</h2>
+					<p>The old way: Email lists</p>
+				</section>
+
+				<section>
+					<h2>Enter GitHub</h2>
+					<p>Why has it gotten so popular?</p>
+					<ul>
+						<li class="fragment">Free for public repos</li>
+						<li class="fragment">Forking</li>
+						<li class="fragment">Pull Requests</li>
+						<li class="fragment">Issues</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Forking</h2>
+					<p>One click and you have your own repository</p>
+					<p>Allows people to get a copy of the code, work on it, push it up, and then...</p>
+				</section>
+
+				<section>
+					<h2>Pull Requests</h2>
+					<p>Probably the biggest reason for GitHub's success</p>
+				</section>
+
+				<section>
+					<h2>Pull Requests</h2>
+					<img width="900" height="600" src="img/pr-ex.png" alt="pr" class="image">
+				</section>
+
+				<section>
+					<h2>Inline Comments</h2>
+					<img width="900" height="600" src="img/comment.png" alt="pr" class="image">
+				</section>
+
+				<section>
+					<h2>Issues</h2>
+					<p>Tracking for issues...duh</p>
+					<p>Popular for tracking bugs, questions, and feature requests</p>
+				</section>
+
+				<section>
+					<h2>How does this all come together?</h2>
+				</section>
+
+				<section>
+					<h2>Popular Workflow</h2>
+					<ol>
+						<li>Find an issue for a project</li>
+						<li>Fork the project</li>
+						<li>Make a feature branch</li>
+						<li>Hack</li>
+						<li>Push to your repo</li>
+						<li>Make a pull request on the original project repo</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Other GitHub Hotness</h2>
+					<p>WebHooks: Enables Continuous Integration and Continuous Deployment</p>
+					<p>Static Site Hosting: This entire slideshow is on GitHub</p>
+					<p>Stars: Follow projects you care about</p>
+				</section>
+
+				<section>
+					<h1>Questions?</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

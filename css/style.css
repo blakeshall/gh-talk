@@ -1,0 +1,14 @@
+#logo{
+  border: none;
+  box-shadow: none;
+  margin-top: -20px;
+}
+
+#octocat{
+  border: none;
+  box-shadow: none;
+}
+
+body{
+  background: url("../img/GitHub-Mark-120px-plus.png") no-repeat left bottom;
+}
